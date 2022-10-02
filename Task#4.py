@@ -1,0 +1,6 @@
+XA = float(input("Введите Х точки А\n"))
+YA = float(input("Введите Y точки А\n"))
+XB = float(input("Введите Х точки B\n"))
+YB = float(input("Введите Y точки B\n"))
+D = ((XA - XB)**2 + (YB - YA)**2)**(0.5)
+print(D)
