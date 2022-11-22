@@ -1,6 +1,11 @@
-XA = float(input("Введите Х точки А\n"))
-YA = float(input("Введите Y точки А\n"))
-XB = float(input("Введите Х точки B\n"))
-YB = float(input("Введите Y точки B\n"))
-D = ((XA - XB)**2 + (YB - YA)**2)**(0.5)
-print(D)
+NumOfQuarter = int(input("Введите номер четверти:\n"))
+while (NumOfQuarter > 4 or NumOfQuarter < 1):
+    NumOfQuarter = int(input("Такой четверти нет! Введите номер четверти:\n"))
+if NumOfQuarter == 1:
+    print("x = + ; y = +")
+elif NumOfQuarter == 2:
+    print("x = - ; y = +")
+elif NumOfQuarter == 3:
+    print("x = - ; y = -")
+else:
+    print("x = + ; y = -")
